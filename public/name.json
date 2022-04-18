@@ -1,0 +1,26 @@
+[
+    {
+      "id": "1",
+      "img": "https://www.nursinghomecarebd.com/wp-content/uploads/24-hours-nursing-services.jpg",
+      "name": "Emergency Service",
+      "price": 1200,
+      "detail": "Every once during a whereas, you’re absolute to get to see a doctor.",
+      "quantity": 0
+    },
+    {
+      "id": "2",
+      "img": "https://5.imimg.com/data5/IG/MN/GLADMIN-8368893/doctors-service-500x500.png",
+      "name": "Mehedi Hasan",
+      "price": 2000,
+      "detail": " Our doctor dedicated to working closely.",
+      "quantity": 0
+    },
+    {
+      "id": "3",
+      "img": "https://healthx.com.bd/static/images/doctor_home5.png",
+      "name": "Mahim",
+      "price": 1000,
+      "detail": "Health Care at home is a pioneer in bringing goes to profession",
+      "quantity": 0
+    }
+]

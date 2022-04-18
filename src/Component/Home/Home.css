@@ -1,0 +1,15 @@
+.btn{
+    background-color: rgb(148, 142, 134);
+    height: 35px;
+    width: 80px;
+    border-radius: 5px;
+}
+.service-container{
+    background-color: rgb(240, 211, 172);
+}
+.card-info{
+    background-color: rgb(243, 186, 113);
+}
+.info{
+    background-color: rgb(240, 211, 172);
+}
