@@ -12,7 +12,7 @@ const SingUp = () => {
     const [error, setError] = useState('');
 
 
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth)
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true})
 
     const handleNameBlur = (e) =>{
         setName(e.target.value);
@@ -46,7 +46,7 @@ const SingUp = () => {
 
 
     return (
-        <div>
+        <div className='sing-info'>
             <h1 className='text-4xl text-center font-bold p-8'>Please SingUp Our Page</h1>
             <form onSubmit={handleCreateUser} className='text-center'>
                 <div className='p-4'>
