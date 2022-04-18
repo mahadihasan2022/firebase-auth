@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 
 
@@ -17,7 +18,7 @@ const Login = () => {
     
     const navigate = useNavigate();
     const location = useLocation();
-    const from = location.state?.from?.pathname || '/';
+    const from = location.state?.from?.pathname || '/Home';
 
     const handleEmailBlur = event => {
         setEmail(event.target.value);
@@ -35,14 +36,13 @@ const Login = () => {
         event.preventDefault();
         signInWithEmailAndPassword(email, password);
     }
+
     
     return (
         <div className='login-info'>
            < h1 className='text-4xl text-center font-bold p-8'>Login Our Page</h1>
            <div className='text-center p-8'>
-               <button  className='btn-google w-28 h-8'>
-                   Google Sign In
-               </button>
+               <SocialLogin></SocialLogin>
            </div>
             <form onSubmit={handleUserSignIn} className='text-center'>
                 <div className='p-4'>

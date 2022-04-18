@@ -3,6 +3,7 @@ import { Link, useNavigate, } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import './SingUp.css'
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const SingUp = () => {
     const [name, setName] = useState('');
@@ -48,6 +49,9 @@ const SingUp = () => {
     return (
         <div className='sing-info'>
             <h1 className='text-4xl text-center font-bold p-8'>Please SingUp Our Page</h1>
+            <div className='text-center p-8'>
+               <SocialLogin></SocialLogin>
+           </div>
             <form onSubmit={handleCreateUser} className='text-center'>
                 <div className='p-4'>
                 <input onBlur={handleNameBlur} type="text" className='form-info-name' placeholder='Your Name'/>
